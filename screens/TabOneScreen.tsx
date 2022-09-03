@@ -8,7 +8,6 @@ import { RootTabScreenProps } from '../types';
 export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Primera ventana</Text>
       <Text style={styles.title}>Login</Text>
       <input type="Text" placeholder="Usuario" style={styles.input_1} className='hp'></input>
       <input
@@ -26,6 +25,10 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
     </View>
   );
 }
+
+const singIn = () => {
+  alert("Iniciando sesión");
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -45,53 +48,30 @@ const styles = StyleSheet.create({
   input_1: {
     width: "10%",
     height: "3%",
-    borderRadius: "10px",
     border: "1px solid #ccc",
     padding: "10px",
     fontfamily: "Algerian",
   },
-  const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: "#fff",
-      alignItems: "center",
-      justifyContent: "center",
-      fontfamily: "Algerian",
-    },
-  
-    input_1: {
-      width: "10%",
-      height: "3%",
-      borderRadius: "10px",
-      border: "1px solid #ccc",
-      padding: "10px",
-      fontfamily: "Algerian",
-    },
-  
-    input_2: {
-      width: "10%",
-      height: "3%",
-      borderRadius: "10px",
-      border: "1px solid #ccc",
-      padding: "10px",
-      marginTop: "10px",
-      fontfamily: "Algerian",
-    },
-  
-    title: {
-      fontSize: "30px",
-      fontfamily: "Algerian",
-      padding: "10px",
-    },
-  
-    boton: {
-      width: "10%",
-      height: "5%",
-      borderRadius: "10px",
-      border: "1px solid #ccc",
-      padding: "10px",
-      marginTop: "10px",
-      fontfamily: "Algerian",
-      cursor: "pointer",
-    },
+  input_2: {
+    width: "10%",
+    height: "3%",
+    border: "1px solid #ccc",
+    padding: "10px",
+    marginTop: "10px",
+    fontfamily: "Algerian",
+  },
+  boton: {
+    width: "10%",
+    height: "5%",
+    border: "1px solid #ccc",
+    padding: "10px",
+    marginTop: "10px",
+    fontfamily: "Algerian",
+    cursor: "pointer",
+  },
+
+
+
+
+
 });
