@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 
@@ -12,6 +12,7 @@ export default function TabTwoScreen() {
     </View>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
